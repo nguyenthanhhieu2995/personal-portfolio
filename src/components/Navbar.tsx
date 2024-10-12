@@ -5,9 +5,9 @@ interface NavbarProps {
 }
 
 export default function Navbar({ navOpen }: NavbarProps) {
-    const lastActiveLink = useRef<HTMLElement | null>(null);
-  const activeBox = useRef<HTMLDivElement>(null);
-  
+  const lastActiveLink = useRef<HTMLElement | null>(null);
+  const activeBox = useRef<HTMLDivElement | null>(null);
+
   const initActiveBox = () => {
     console.log(lastActiveLink.current);
     console.log(activeBox.current);
@@ -16,10 +16,9 @@ export default function Navbar({ navOpen }: NavbarProps) {
     activeBox.current!.style.width = lastActiveLink.current!.offsetWidth + "px";
     activeBox.current!.style.height =
       lastActiveLink.current!.offsetHeight + "px";
-      
   };
-  useEffect(initActiveBox, []);
   
+  useEffect(initActiveBox, []);
   window.addEventListener("resize", initActiveBox);
   const activeCurrentLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const target = event.currentTarget;

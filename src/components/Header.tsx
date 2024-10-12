@@ -9,7 +9,7 @@ export default function Header() {
         <h1>
           <a href="/" className="logo">
             <img
-              src="/images/logo.svg"
+              src="/images/logo.png"
               alt="Hieu Nguyen"
               className="w-10 h-10"
             />
