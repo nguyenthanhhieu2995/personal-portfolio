@@ -58,8 +58,7 @@ export default function Skill() {
       <div className="container">
         <h2 className="headline-2">Language I can use</h2>
         <p className="mb-8 mt-3 max-w-[50ch] text-zinc-400">
-          I like to code things from scratch, and enjoy bringing ideas to life
-          in the browser. Discover the powerful tools and technologies I use to
+          Discover the powerful tools and technologies I use to
           create websites & applications.
         </p>
         <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-3">

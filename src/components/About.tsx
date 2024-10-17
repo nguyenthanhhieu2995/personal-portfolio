@@ -14,10 +14,14 @@ export default function About() {
       <div className="container">
         <div className="rounded-2xl bg-zinc-800/50 p-7 md:p-12">
           <p className="mb-4 text-zinc-300 md:mb-8 md:max-w-[60ch] md:text-xl">
-            Welcome! as Junior web developer with a knack
-            for crafting visually stunning and highly functional websites.
-            Combining creativity and technical expertise. I'm quietly confident,
-            naturally curious, and perpetually working on improving my chops.
+            As an aspiring web developer, I specialize in creating visually
+            appealing and user-friendly websites. My passion lies in building
+            projects from the ground up, transforming concepts into interactive
+            digital experiences. By blending artistic flair with technical
+            proficiency, I strive to deliver exceptional results. I approach
+            challenges with quiet confidence, maintain an inquisitive mindset,
+            and am dedicated to continuously enhancing my skills in this
+            ever-evolving field.
           </p>
           <div className="flex flex-wrap items-center gap-4 md:gap-7">
             {ABOUT_ITEMS.map(({ label, number }, key) => (

@@ -39,9 +39,12 @@ body {
 }
 
 .headline-2 {
-  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold;
 }
 
+.title-1 {
+  @apply text-[22px] font-normal;
+}
 .menu-btn {
   @apply grid h-10 w-10 place-items-center rounded-xl bg-zinc-50/10 ring-1 ring-inset ring-zinc-50/[0.02] backdrop-blur-2xl transition-[transform,background-color] hover:bg-zinc-50/15 active:scale-95;
 }
@@ -82,8 +85,17 @@ body {
 .btn-outline {
   @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800;
 }
-
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2
+}
+.text-field {
+  @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-lg ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2
+}
+.text-field::placeholder {
+  @apply text-zinc-400
+}
 .section {
   @apply pt-20 lg:pt-32;
 }
+
 
